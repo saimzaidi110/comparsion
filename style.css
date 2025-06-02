@@ -1,0 +1,347 @@
+/* Basic Reset & Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header & Navigation */
+header {
+    background: #2c3e50; /* Darker blue-grey */
+    color: #fff;
+    padding-top: 15px;
+    min-height: 60px;
+    border-bottom: #3498db 4px solid; /* Brighter blue */
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+header nav {
+    float: right;
+    margin-top: 5px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* Main Content Sections */
+main {
+    padding: 20px 0;
+}
+
+section {
+    padding: 30px 0;
+    margin-bottom: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-size: 2em;
+}
+
+/* Hero Section (Home Page Specific) */
+#hero {
+    text-align: center;
+    background: linear-gradient(to right, #3498db, #2980b9); /* Blue gradient */
+    color: #fff;
+    padding: 60px 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#hero h2 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+#hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+.button {
+    display: inline-block;
+    color: #fff;
+    background: #3498db;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+.button-secondary {
+    background: #95a5a6; /* Grey for clear button */
+    margin-left: 10px;
+}
+
+.button-secondary:hover {
+    background: #7f8c8d;
+}
+
+/* Product Grid (Home Page) */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.product-card {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.product-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.product-card p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #e67e22; /* Orange */
+    margin-bottom: 15px;
+}
+
+.product-card .add-to-compare {
+    background: #2ecc71; /* Green */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95em;
+}
+
+.product-card .add-to-compare:hover {
+    background: #27ae60;
+}
+
+/* Comparison Selection (Comparison Page) */
+#comparison-selection {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.selection-controls {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.product-selector {
+    background: #ecf0f1; /* Light grey */
+    padding: 25px;
+    border-radius: 8px;
+    width: 380px;
+    text-align: left;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.product-selector h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.product-selector select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #fff;
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M287%2069.2L146.2%20209.6%205.4%2069.2c-1.8-1.8-4.7-1.8-6.5%200l-5.3%205.3c-1.8%201.8-1.8%204.7%200%206.5l141.9%20141.9c1.8%201.8%204.7%201.8%206.5%200l141.9-141.9c1.8-1.8%201.8-4.7%200-6.5l-5.3-5.3c-1.8-1.8-4.7-1.8-6.5%200z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 12px auto;
+}
+
+#compareButton, #clearComparisonButton {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.1em;
+}
+
+/* Comparison Results Table (Comparison Page) */
+#comparison-results {
+    padding-top: 0; /* Adjust padding as it's part of main section */
+}
+
+#comparison-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden; /* For rounded corners on table */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#comparison-table-container th,
+#comparison-table-container td {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    text-align: left;
+}
+
+#comparison-table-container th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #555;
+    text-transform: capitalize; /* Make feature names look nicer */
+}
+
+#comparison-table-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#comparison-table-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #2c3e50;
+    color: #fff;
+    margin-top: 40px;
+    border-top: #3498db 4px solid;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1, header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 8px 0;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .selection-controls {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .product-selector {
+        width: 100%;
+        max-width: 380px; /* Keep max width to prevent stretching too much */
+    }
+
+    #compareButton, #clearComparisonButton {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
