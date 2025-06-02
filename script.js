@@ -5,7 +5,7 @@ const products = {
             id: 'm1',
             name: 'iPhone 15 Pro',
             category: 'mobile',
-            image: 'https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1?wid=512&hei=512&fmt=jpeg&qlt=95&.v=1692845702701',
+            image: 'https://rakistan.pk/wp-content/uploads/2023/12/Apple-Iphone-15-Pro.jpg',
             price: '$999',
             features: {
                 'Display': '6.1" OLED ProMotion',
@@ -22,7 +22,7 @@ const products = {
             id: 'm2',
             name: 'Samsung Galaxy S24 Ultra',
             category: 'mobile',
-            image: 'https://images.samsung.com/is/image/samsung/p6pim/levant/2401/gallery/levant-galaxy-s24-ultra-s928-sm-s928bzthmea-thumb-539077202?semc_src=permanent_shop_s24-main-kv-page&semc_alt=internal-s24-main-kv-page&nav_id=samsung-main-kv-page&_ga=2.234661413.1118181655.1706692591-1402241680.1706692591&fmt=webp',
+            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe199lQMx5DN4buZHFrKX1f4Bea5g4ObvUew&s',
             price: '$1199',
             features: {
                 'Display': '6.8" Dynamic AMOLED 2X',
@@ -39,7 +39,7 @@ const products = {
             id: 'm3',
             name: 'Google Pixel 8 Pro',
             category: 'mobile',
-            image: 'https://store.google.com/product/pixel_8_pro?hl=en-US',
+            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPB7B79keMsIx1oH68ldES_WnpGTnsgu8xOQ&s',
             price: '$799',
             features: {
                 'Display': '6.7" Super Actua Display',
@@ -56,7 +56,7 @@ const products = {
             id: 'm4',
             name: 'OnePlus 12',
             category: 'mobile',
-            image: 'https://image.oneplus.com/content/dam/oasis/product-description-pages/cn/1plus-12/pc/color-pic/green.png',
+            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN1JqyMuIN6sSYwukmKaegRqJBzBAlV7kQ9g&s',
             price: '$799',
             features: {
                 'Display': '6.82" Fluid AMOLED LTPO',
